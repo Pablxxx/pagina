@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
-    <link rel="stylesheet" href="css hermano/style.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/6184e3a18d.js" crossorigin="anonymous"></script>
 </head>
 <body>
      <header>
@@ -14,17 +14,89 @@
             <p class="logo"> SIMAB</p>
             <img src="assets/img/foto1.jpg" alt="logo">
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
-                <a href="#">Servicios</a>
-                <a href="#">Socios</a>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="socios.html">Socios</a>
             </nav>
          </div>
      </header>
+
+        
+        
+
         <section id="hero">
-            <h1>Red contra incendios</h1>
+           <!--  <h1>Red contra incendios</h1>  --> 
+            <div id="conteCarrusel">
+                <div class="itemCarrusel" id="iCarrusel-1">
+                    <div class="tarjetaCarrusel" id="tCarrusel-1"> 
+                    <img src="assets/img/ejemplo1.png" alt="">
+                    </div>
+    
+                    <div class="flechasCarrusel">
+                    <a id="aCarrusel" href="#iCarrusel-3">
+                        <i class="fa-solid fa-circle-arrow-left" ></i> 
+                    </a>
+                      
+                    <a id="aCarrusel" href="#iCarrusel-2">
+                        <i class="fa-solid fa-circle-arrow-right" ></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="itemCarrusel" id="iCarrusel-2">
+                <div class="tarjetaCarrusel" id="tCarrusel-2"> 
+                    <img src="assets/img/ejemplo2.png" alt="">
+                </div>
+    
+                <div class="flechasCarrusel">
+                    <a id="aCarrusel" href="#iCarrusel-1">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                    </a>
+                    <a id="aCarrusel" href="#iCarrusel-3">
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+                </div>
+
+                <div class="itemCarrusel" id="iCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tCarrusel-3"> 
+                        <img src="assets/img/ejemplo3.jpg" alt="">
+                    </div>
+        
+                    <div class="flechasCarrusel">
+                        <a id="aCarrusel" href="#iCarrusel-2">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                        </a>
+                        <a id="aCarrusel" href="#iCarrusel-1">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
+                    </div>
+                    </div>
+    
+
+
+
+            </div>
+            
+            <div id="contePuntos">
+                <a href="#iCarrusel-1">·</a>
+                <a href="#iCarrusel-2">·</a>
+                <a href="#iCarrusel-3">·</a>
+            </div>
+
+
+
+
+
+
         </section>
+
+
+
+
+
         <section id="somos-simab">
             <div class="img-container">
              <h2> Somos SIMAB</h2>
