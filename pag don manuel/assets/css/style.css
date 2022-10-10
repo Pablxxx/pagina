@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 html{
@@ -28,6 +31,15 @@ li{ font-size: 1.25em;}
     margin: auto;
     
 }
+
+header{
+    z-index: 100;
+}
+
+#hero{
+    z-index: 2;
+}
+
 
 header{
     background-color: rgb(182, 18, 18);
@@ -104,6 +116,8 @@ header a:hover{
     height: 90vh;
     width: 100%;
     overflow: hidden;
+    position:absolute;
+    
 }
 
 .itemCarrusel{
@@ -125,6 +139,7 @@ header a:hover{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
 }
 
 #tCarrusel-1{
@@ -162,8 +177,9 @@ height: 90vh;
 
 
 #contePuntos{
-    display: flex;
+    display:flex;
     justify-content: space-around;
+    
 }
 
 #contePuntos > a{
@@ -174,19 +190,27 @@ height: 90vh;
     text-decoration: none;
 }
 
-#somos-simab .container{
+#somos-simab > .img-container{
     text-align: center;
-    padding: 200px 12px;
+    align-items: center;
+    padding-bottom: 5px;
+    overflow:hidden;
+    
+    
 }
+
 
 #somos-simab{
     background-color: rgb(188, 30, 30);
     color: rgba(0, 0, 0, 0.81);
-    text-align: center;
+    overflow:hidden;
+    height: 20vh;
+
 }
 
 #trabajos-realizados .container{
     padding: 150px 12px;
+    
 }
 
 #trabajos-realizados h2{
@@ -197,6 +221,7 @@ height: 90vh;
 #trabajos-realizados p{
     display: none;
 }
+
 
 #caracteristicas .container{
     text-align: center;
@@ -342,4 +367,79 @@ footer .container{
     #caracteristicas{
         background-position-x: calc(100vw - 800px);
     }
+}
+
+
+/*       Pie de pagina   */
+
+.pie-pagina{
+    width: 100%;
+    
+    background-color: rgb(169, 28, 28);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-left: 3.5%;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffff;
+
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
 }
