@@ -53,12 +53,19 @@ header .logo{
     font-weight: bold;
     color: rgb(233, 225, 240);
     font-size: 1.6em;
+    
 }
 
+header .container img{
+    margin: 2%;
+    width: 50px;
+    height: 50px;
+}
 header .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    
 }
 
 header nav{
@@ -199,12 +206,16 @@ height: 90vh;
     
 }
 
+#somos-simab .img-container p{
+    margin-bottom: 30%;
+}
+
 
 #somos-simab{
     background-color: rgb(188, 30, 30);
     color: rgba(0, 0, 0, 0.81);
     overflow:hidden;
-    height: 20vh;
+    height: 22vh;
 
 }
 
@@ -220,6 +231,7 @@ height: 90vh;
 
 #trabajos-realizados p{
     display: none;
+   
 }
 
 
